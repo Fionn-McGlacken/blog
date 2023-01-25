@@ -3,3 +3,4 @@ body * {
     background:             hsla(210, 100%,  50%, 0.33) !important;
     outline: 0.25 rem solid hsla(210, 100%, 100%, 0.58) !important;
 }
+/* important means no value can override it */
