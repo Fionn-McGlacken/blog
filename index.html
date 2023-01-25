@@ -9,38 +9,27 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:40,400i,500,500i,700,700i,900,900i"> <! -- link to google fonts -->
         <link rel="stylesheet" href="styles/reset.css"> <! -- link to css file -->
         <link rel="stylesheet" href="styles/debug.css">
+        <link rel="stylesheet" href="styles/article.css">
         <style>
-            article {
-                display: grid;
-                grid-template-columns: 1fr 0.5in [start] 7.5in [end] 0.5in 1fr;
-                height: 100vh;
-                padding: 0.5in 0;
-            }
+            .size-1 { grid-column: 4 / 5; }
+            .size-2 { grid-column: 3 / 6; }
+            .size-3 { grid-column: 2 / 7; }
+            .size-4 { grid-column: 1 / 8; }
+            <! -- each class is a different size image -->
 
-            article * { grid-column: start / end; }
-            <!-- all children to occupy middle grid -->
-
-            @media (max-width: 8.5in) {
-                article { grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr; }
-            } <! -- responsive design: if screen is smaller than 8.5in, then change grid -->
-
+            img.size-1, img.size-2, img.size-3, img.size-4 { width: 100%; }
         </style>
     </head>
     <body>
         <h1>Fionn's Blog</h1>
         This is a website for me to publicly document my knowledge.
-
         <section id="posts">
             <! -- each article is a post that occupies windows height -->
             <article>
-                <p class="debug-center">ARTICLE</p>
-            </article>
-
-            <article>
-                <p class="debug-center">ARTICLE</p>
-            </article>
-
-            <article>
+                <img class="size-1" src="images\space.jpg">
+                <img class="size-2" src="images\space.jpg">
+                <img class="size-3" src="images\space.jpg">
+                <img class="size-4" src="images\space.jpg">
                 <p class="debug-center">ARTICLE</p>
             </article>
         </section>
