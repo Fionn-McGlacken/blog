@@ -9,14 +9,27 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:40,400i,500,500i,700,700i,900,900i"> <! -- link to google fonts -->
         <link rel="stylesheet" href="styles/reset.css"> <! -- link to css file -->
         <link rel="stylesheet" href="styles/debug.css">
+        <style>
+            article {
+                display: grid;
+                grid-template-columns: 1fr 8.5in 1fr;
+                height: 100vh;
+            }
+
+            article * { grid-column: 2 / 3; }
+            <!-- all children to occupy middle grid -->
+
+        </style>
     </head>
     <body>
         <h1>Fionn's Blog</h1>
         This is a website for me to publicly document my knowledge.
 
         <section id="posts">
-            <h2>Posts</h2>
-            <p> This is a paragraph.</p>
+            <article>
+                <h2>Posts</h2>
+                <p> This is a paragraph.</p>
+            </article>
         </section>
     </body>
 </html>
