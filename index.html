@@ -6,31 +6,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <! -- scale across devices -->
         <title>Fionn's Blog</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:40,400i,500,500i,700,700i,900,900i"> <! -- link to google fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i"> <! -- link to google fonts -->
         <link rel="stylesheet" href="styles/reset.css"> <! -- link to css file -->
         <link rel="stylesheet" href="styles/debug.css">
         <link rel="stylesheet" href="styles/article.css">
+        <link rel="stylesheet" href="styles/article-images.css">
         <style>
-            .size-1 { grid-column: 4 / 5; }
-            .size-2 { grid-column: 3 / 6; }
-            .size-3 { grid-column: 2 / 7; }
-            .size-4 { grid-column: 1 / 8; }
-            <! -- each class is a different size image -->
-
-            img.size-1, img.size-2, img.size-3, img.size-4 { width: 100%; }
+            h2, p:not(:last-child) { margin-bottom: 2.4rem; }
         </style>
     </head>
     <body>
-        <h1>Fionn's Blog</h1>
-        This is a website for me to publicly document my knowledge.
+        <section id="header">
+            <h1>Fionn's Blog</h1>
+            <p> This is a website for me to publicly document my knowledge.</p>
+        </section>
         <section id="posts">
             <! -- each article is a post that occupies windows height -->
-            <article>
-                <img class="size-1" src="images\space.jpg">
-                <img class="size-2" src="images\space.jpg">
-                <img class="size-3" src="images\space.jpg">
-                <img class="size-4" src="images\space.jpg">
-                <p class="debug-center">ARTICLE</p>
+            <article id = "article-0">
+                <h1><a href="#article-0">This is <em>Article 0</em></a></h1>
+                <time datetime="25-01-2023">JAN. 25 2023</time>
+                <p>
+                    This is my <em> first </em> article.
+                </p>
             </article>
         </section>
     </body>
